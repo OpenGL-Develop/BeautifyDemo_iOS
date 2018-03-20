@@ -1,0 +1,247 @@
+[
+  {
+    "title_chinese" : "黑白",
+    "quality" : 5,
+    "filter" : "filter_lookup_B+W",
+    "sample" : "filter_sample_B+W",
+    "title_english" : "B+W"
+  },
+  {
+    "title_chinese" : "平静",
+    "quality" : 5,
+    "filter" : "filter_lookup_calm",
+    "sample" : "filter_sample_calm",
+    "title_english" : "Calm"
+  },
+  {
+    "title_chinese" : "晴天",
+    "quality" : 5,
+    "filter" : "filter_lookup_sunny",
+    "sample" : "filter_sample_sunny",
+    "title_english" : "Sunny"
+  },
+  {
+    "title_chinese" : "旅程",
+    "quality" : 5,
+    "filter" : "filter_lookup_trip",
+    "sample" : "filter_sample_trip",
+    "title_english" : "Trip"
+  },
+  {
+    "title_chinese" : "美肤",
+    "quality" : 5,
+    "filter" : "filter_lookup_beautify",
+    "sample" : "filter_sample_beautify",
+    "title_english" : "Beautify"
+  },
+  {
+    "title_chinese" : "王家卫",
+    "quality" : 5,
+    "filter" : "filter_lookup_WKW",
+    "sample" : "filter_sample_WKW",
+    "title_english" : "WKW"
+  },
+  {
+    "title_chinese" : "唯美",
+    "quality" : 5,
+    "filter" : "filter_lookup_teaTime",
+    "sample" : "filter_sample_teaTime",
+    "title_english" : "Tea Time"
+  },
+  {
+    "title_chinese" : "可人儿",
+    "quality" : 5,
+    "filter" : "filter_lookup_cutie",
+    "sample" : "filter_sample_cutie",
+    "title_english" : "Cutie"
+  },
+  {
+    "title_chinese" : "纽约",
+    "quality" : 5,
+    "filter" : "filter_lookup_NYC",
+    "sample" : "filter_sample_NYC",
+    "title_english" : "NYC"
+  },
+  {
+    "title_chinese" : "樱花",
+    "quality" : 5,
+    "filter" : "filter_lookup_sakura",
+    "sample" : "filter_sample_sakura",
+    "title_english" : "Sakura"
+  },
+  {
+    "title_chinese" : "十七岁",
+    "quality" : 5,
+    "filter" : "filter_lookup_17yo",
+    "sample" : "filter_sample_17yo",
+    "title_english" : "17yo"
+  },
+  {
+    "title_chinese" : "柔光灯",
+    "quality" : 5,
+    "filter" : "filter_lookup_wlight",
+    "sample" : "filter_sample_wlight",
+    "title_english" : "Wlight"
+  },
+  {
+    "title_chinese" : "下午茶",
+    "quality" : 4,
+    "filter" : "filter_lookup_teaTime",
+    "sample" : "filter_sample_teaTime",
+    "title_english" : "Tea Time"
+  },
+  {
+    "title_chinese" : "亮肤",
+    "quality" : 4,
+    "filter" : "filter_lookup_whiten",
+    "sample" : "filter_sample_whiten",
+    "title_english" : "Whiten"
+  },
+  {
+    "title_chinese" : "卓别林",
+    "quality" : 4,
+    "filter" : "filter_lookup_chaplin",
+    "sample" : "filter_sample_chaplin",
+    "title_english" : "Chaplin"
+  },
+  {
+    "title_chinese" : "花香",
+    "quality" : 4,
+    "filter" : "filter_lookup_flowers",
+    "sample" : "filter_sample_flowers",
+    "title_english" : "Flowers"
+  },
+  {
+    "title_chinese" : "回忆",
+    "quality" : 4,
+    "filter" : "filter_lookup_memory",
+    "sample" : "filter_sample_memory",
+    "title_english" : "Memory"
+  },
+  {
+    "title_chinese" : "冰美人",
+    "quality" : 4,
+    "filter" : "filter_lookup_iceLady",
+    "sample" : "filter_sample_iceLady",
+    "title_english" : "Ice Lady"
+  },
+  {
+    "title_chinese" : "巴黎",
+    "quality" : 4,
+    "filter" : "filter_lookup_paris",
+    "sample" : "filter_sample_paris",
+    "title_english" : "Paris"
+  },
+  {
+    "title_chinese" : "时光",
+    "quality" : 4,
+    "filter" : "filter_lookup_times",
+    "sample" : "filter_sample_times",
+    "title_english" : "Times"
+  },
+  {
+    "title_chinese" : "LOMO",
+    "quality" : 4,
+    "filter" : "filter_lookup_lomo",
+    "sample" : "filter_sample_lomo",
+    "title_english" : "Lomo"
+  },
+  {
+    "title_chinese" : "旧时光",
+    "quality" : 4,
+    "filter" : "filter_lookup_oldTimes",
+    "sample" : "filter_sample_oldTimes",
+    "title_english" : "Old Times"
+  },
+  {
+    "title_chinese" : "早春",
+    "quality" : 4,
+    "filter" : "filter_lookup_spring",
+    "sample" : "filter_sample_spring",
+    "title_english" : "Spring"
+  },
+  {
+    "title_chinese" : "故事",
+    "quality" : 4,
+    "filter" : "filter_lookup_story",
+    "sample" : "filter_sample_story",
+    "title_english" : "Story"
+  },
+  {
+    "title_chinese" : "阿宝色",
+    "quality" : 4,
+    "filter" : "filter_lookup_abao",
+    "sample" : "filter_sample_abao",
+    "title_english" : "Abao"
+  },
+  {
+    "title_chinese" : "补光灯",
+    "quality" : "4",
+    "filter" : "filter_lookup_clight",
+    "sample" : "filter_sample_clight",
+    "title_english" : "Clight"
+  },
+  {
+    "title_chinese" : "暖暖",
+    "quality" : 4,
+    "filter" : "filter_lookup_warm",
+    "sample" : "filter_sample_warm",
+    "title_english" : "Warm"
+  },
+  {
+    "title_chinese" : "绚烂",
+    "quality" : "4",
+    "filter" : "filter_lookup_warm",
+    "sample" : "filter_sample_warm",
+    "title_english" : "Warm"
+  },
+  {
+    "title_chinese" : "薰衣草",
+    "quality" : 3,
+    "filter" : "filter_lookup_lavender",
+    "sample" : "filter_sample_lavender",
+    "title_english" : "Lavender"
+  },
+  {
+    "title_chinese" : "香奈儿",
+    "quality" : 3,
+    "filter" : "filter_lookup_chanel",
+    "sample" : "filter_sample_chanel",
+    "title_english" : "Chanel"
+  },
+  {
+    "title_chinese" : "布拉格",
+    "quality" : 3,
+    "filter" : "filter_lookup_prague",
+    "sample" : "filter_sample_prague",
+    "title_english" : "Prague"
+  },
+  {
+    "title_chinese" : "旧梦",
+    "quality" : 3,
+    "filter" : "filter_lookup_oldDream",
+    "sample" : "filter_sample_oldDream",
+    "title_english" : "Old Dream"
+  },
+  {
+    "title_chinese" : "桃花",
+    "quality" : 3,
+    "filter" : "filter_lookup_blossom",
+    "sample" : "filter_sample_blossom",
+    "title_english" : "Blossom"
+  },
+  {
+    "title_chinese" : "粉黛",
+    "quality" : 3,
+    "filter" : "filter_lookup_pink",
+    "sample" : "filter_sample_pink",
+    "title_english" : "Pink"
+  },
+  {
+    "title_chinese" : "江南",
+    "quality" : 3,
+    "filter" : "filter_lookup_jiangNan",
+    "sample" : "filter_sample_jiangNan",
+    "title_english" : "Jiang Nan"
+  }
+]

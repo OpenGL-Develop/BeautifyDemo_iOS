@@ -1,0 +1,37 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "B9DCAFE2395C50C52ADB07B561283449ED4C6709",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "B9DCAFE2395C50C52ADB07B561283449ED4C6709" : 9223372036854775807,
+    "4BC50DA84181851FAF2CDCAF89328ED93AEEB1CC" : 9223372036854775807,
+    "5FDBE05B88BAB595686B62E20048C02977EADC6D" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "BD9B70B9-08F0-4C5B-A527-CAE9A450C5A6",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "B9DCAFE2395C50C52ADB07B561283449ED4C6709" : "BeautifyDemo\/",
+    "4BC50DA84181851FAF2CDCAF89328ED93AEEB1CC" : "mg-beautify-sdk\/",
+    "5FDBE05B88BAB595686B62E20048C02977EADC6D" : "mg-beautify-sdk\/thirdParty\/MegviiSDKHeaders\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Beautify",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "APP\/Beautify.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/git-pd.megvii-inc.com\/csg-mobile\/mg-beautify-sdk.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "4BC50DA84181851FAF2CDCAF89328ED93AEEB1CC"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "git-pd.megvii-inc.com:csg-mobile\/MegviiSDKHeaders.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "5FDBE05B88BAB595686B62E20048C02977EADC6D"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/git-pd.megvii-inc.com\/csg-mobile\/MGB-iOS-DEMO.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "B9DCAFE2395C50C52ADB07B561283449ED4C6709"
+    }
+  ]
+}

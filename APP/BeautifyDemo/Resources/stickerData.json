@@ -1,0 +1,186 @@
+[
+  {
+    "title_chinese" : "空姐",
+    "zipName" : "airlineStewardess.zip",
+    "filter" : "airline_stewardess.png",
+    "sample" : "airline_stewardess.png",
+    "quality" : 0,
+    "title_english" : "airline"
+  },
+  {
+    "title_chinese" : "小熊",
+    "zipName" : "bear.zip",
+    "filter" : "bear.png",
+    "sample" : "bear.png",
+    "quality" : 0,
+    "title_english" : "bear"
+  },
+  {
+    "title_chinese" : "猫咪",
+    "zipName" : "pinkCat.zip",
+    "filter" : "beautiful_pink_cat.png",
+    "sample" : "beautiful_pink_cat.png",
+    "quality" : 0,
+    "title_english" : "pink cat"
+  },
+  {
+    "title_chinese" : "蓝猫",
+    "zipName" : "blueBear.zip",
+    "filter" : "blue_bear.png",
+    "sample" : "blue_bear.png",
+    "quality" : 0,
+    "title_english" : "blue bear"
+  },
+  {
+    "title_chinese" : "鹿",
+    "zipName" : "deer.zip",
+    "filter" : "deer.png",
+    "sample" : "deer.png",
+    "quality" : 0,
+    "title_english" : "deer"
+  },
+  {
+    "title_chinese" : "皇后",
+    "zipName" : "diadema.zip",
+    "filter" : "diadema.png",
+    "sample" : "diadema.png",
+    "quality" : 0,
+    "title_english" : "diadema"
+  },
+  {
+    "title_chinese" : "斑点狗",
+    "zipName" : "dog.zip",
+    "filter" : "dog.png",
+    "sample" : "dog.png",
+    "quality" : 0,
+    "title_english" : "dog"
+  },
+  {
+    "title_chinese" : "荧光",
+    "zipName" : "fluorescence.zip",
+    "filter" : "fluorescence.png",
+    "sample" : "fluorescence.png",
+    "quality" : 0,
+    "title_english" : "fluorescence"
+  },
+  {
+    "title_chinese" : "喝水熊",
+    "zipName" : "hotWaterBear.zip",
+    "filter" : "hot_water_bear.png",
+    "sample" : "hot_water_bear.png",
+    "quality" : 0,
+    "title_english" : "water bear"
+  },
+  {
+    "title_chinese" : "果酱熊",
+    "zipName" : "jamBear.zip",
+    "filter" : "jam_bear.png",
+    "sample" : "jam_bear.png",
+    "quality" : 0,
+    "title_english" : "jam bear"
+  },
+  {
+    "title_chinese" : "兔子",
+    "zipName" : "lolipopRabbit.zip",
+    "filter" : "lollipop_rabbit.png",
+    "sample" : "lollipop_rabbit.png",
+    "quality" : 0,
+    "title_english" : "lollipop rabbit"
+  },
+  {
+    "title_chinese" : "菠萝苹果",
+    "zipName" : "pineApple.zip",
+    "filter" : "pineapple.png",
+    "sample" : "pineapple.png",
+    "quality" : 0,
+    "title_english" : "pineapple"
+  },
+  {
+    "title_chinese" : "叮当猫",
+    "zipName" : "bellCat.zip",
+    "filter" : "small_bell_cat.png",
+    "sample" : "small_bell_cat.png",
+    "quality" : 0,
+    "title_english" : "bell cat"
+  },
+  {
+    "title_chinese" : "百花环",
+    "zipName" : "whiteFlowers.zip",
+    "filter" : "white_flowers.png",
+    "sample" : "white_flowers.png",
+    "quality" : 0,
+    "title_english" : "white flowers"
+  },
+  {
+    "title_chinese" : "白兔",
+    "zipName" : "whiteRabbit.zip",
+    "filter" : "white_rabbit.png",
+    "sample" : "white_rabbit.png",
+    "quality" : 0,
+    "title_english" : "white rabbit"
+  },
+  {
+    "title_chinese" : "漂亮女孩",
+    "zipName" : "lanternGirl.zip",
+    "filter" : "lantern_girl.png",
+    "sample" : "lantern_girl.png",
+    "quality" : 0,
+    "title_english" : "girl"
+  },
+  {
+    "title_chinese" : "小兔子",
+    "zipName" : "rabbit.zip",
+    "filter" : "rabbit.png",
+    "sample" : "rabbit.png",
+    "quality" : 0,
+    "title_english" : "pinkFlower"
+  },
+  {
+    "title_chinese" : "气球",
+    "zipName" : "balloon.zip",
+    "filter" : "balloon.png",
+    "sample" : "balloon.png",
+    "quality" : 0,
+    "title_english" : "pinkFlower"
+  },
+  {
+    "title_chinese" : "皇冠",
+    "zipName" : "imperialcrown.zip",
+    "filter" : "imperial_crown.png",
+    "sample" : "imperial_crown.png",
+    "quality" : 0,
+    "title_english" : "imperial crown"
+  },
+  {
+    "title_chinese" : "蒲公英",
+    "zipName" : "dandelion.zip",
+    "filter" : "dandelion.jpg",
+    "sample" : "dandelion.jpg",
+    "quality" : 0,
+    "title_english" : "dandelion"
+  },
+  {
+    "title_chinese" : "苍穹",
+    "zipName" : "dazzleLight.zip",
+    "filter" : "dazzle_light.jpg",
+    "sample" : "dazzle_light.jpg",
+    "quality" : 0,
+    "title_english" : "dazzle light"
+  },
+  {
+    "title_chinese" : "粉花朵",
+    "zipName" : "pinkFlower.zip",
+    "filter" : "pinkflower.jpg",
+    "sample" : "pinkflower.jpg",
+    "quality" : 0,
+    "title_english" : "pinkFlower"
+  },
+   {
+    "title_chinese" : "星星",
+    "zipName" : "star.zip",
+    "filter" : "star.jpg",
+    "sample" : "star.jpg",
+    "quality" : 0,
+    "title_english" : "star"
+  }
+]

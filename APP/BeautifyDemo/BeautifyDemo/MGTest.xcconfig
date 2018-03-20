@@ -1,0 +1,12 @@
+//
+//  MGTest.xcconfig
+//  BeautifyDemo
+//
+//  Created by 张英堂 on 2017/7/11.
+//  Copyright © 2017年 megvii. All rights reserved.
+//
+#include "CommonConfig.xcconfig"
+
+APP_DISPLAY_NAME = 美颜测试
+CONFIG_FLAG = DEBUG
+MAIN_STROY_NAME = Main_test

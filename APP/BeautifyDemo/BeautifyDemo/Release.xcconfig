@@ -1,0 +1,13 @@
+//
+//  Release.xcconfig
+//  BeautifyDemo
+//
+//  Created by 张英堂 on 2017/7/11.
+//  Copyright © 2017年 megvii. All rights reserved.
+//
+#include "CommonConfig.xcconfig"
+
+
+APP_DISPLAY_NAME = 美颜相机
+CONFIG_FLAG = RELEASE
+MAIN_STROY_NAME = Main

@@ -1,0 +1,44 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "B9DCAFE2395C50C52ADB07B561283449ED4C6709",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "69F921D28F743B593C676A2093619AA4179E8847" : 9223372036854775807,
+    "CAA0BF5FB7CF7B678132F6B7FCA45A5F00289A6F" : 9223372036854775807,
+    "4BC50DA84181851FAF2CDCAF89328ED93AEEB1CC" : 9223372036854775807,
+    "B9DCAFE2395C50C52ADB07B561283449ED4C6709" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "2B4508F3-6100-4089-9659-D7837E5EE0CD",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "69F921D28F743B593C676A2093619AA4179E8847" : "mg-beautify-sdk\/faceppsdk\/thirdparty\/MGCrypto\/",
+    "CAA0BF5FB7CF7B678132F6B7FCA45A5F00289A6F" : "mg-beautify-sdk\/faceppsdk\/",
+    "4BC50DA84181851FAF2CDCAF89328ED93AEEB1CC" : "mg-beautify-sdk\/",
+    "B9DCAFE2395C50C52ADB07B561283449ED4C6709" : "BeautifyDemo\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "MGB",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "MGB.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/git-pd.megvii-inc.com\/cloudDEV\/mg-beautify-sdk.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "4BC50DA84181851FAF2CDCAF89328ED93AEEB1CC"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "git-core.megvii-inc.com:brian\/MGCrypto.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "69F921D28F743B593C676A2093619AA4179E8847"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/git-pd.megvii-inc.com\/csg-mobile\/MGB-iOS.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "B9DCAFE2395C50C52ADB07B561283449ED4C6709"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "git-core.megvii-inc.com:CSPSDK\/Megvii-Facepp-SDK.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "CAA0BF5FB7CF7B678132F6B7FCA45A5F00289A6F"
+    }
+  ]
+}
