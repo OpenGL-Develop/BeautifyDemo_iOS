@@ -100,6 +100,7 @@
 @protocol MGVideoDelegate <NSObject>
 
 @required
+
 - (void)MGCaptureOutput:(AVCaptureOutput *)captureOutput
   didOutputSampleBuffer:(CMSampleBufferRef)sampleBuffer
          fromConnection:(AVCaptureConnection *)connection;

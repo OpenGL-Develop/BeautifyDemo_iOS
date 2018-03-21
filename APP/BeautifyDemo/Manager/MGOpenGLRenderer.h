@@ -13,6 +13,7 @@
 /**
  设置输出参数
  @param sampleBuffer A CMSampleBuffer object containing the audio samples and additional information about them, such as their format and presentation time.
+ 
  */
 - (void)prepareForInputSampleBuffer:(CMSampleBufferRef)sampleBuffer
                      devicePosition:(AVCaptureDevicePosition)devicePosition;

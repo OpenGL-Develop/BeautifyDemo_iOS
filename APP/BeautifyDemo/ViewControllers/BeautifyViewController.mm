@@ -75,6 +75,7 @@
 }
 
 #pragma mark - 权限检查
+//检测作者的权限
 - (void)checkAuthorization{
     @weakify(self)
     [DeviceAuthManager checkAuthorization:^(BOOL success) {
@@ -89,6 +90,8 @@
         });
     }];
 }
+
+//提醒用户进行打开权限
 - (void)showAVAuthorizationStatusDeniedAlert{
     [self alertView:@"提示" message:@"请在iPhone的“设置-隐私-相机”选项中，允许 Face++ 访问你的相机"
              cancel:@"确定" handler:^(UIAlertAction *action) {
@@ -97,6 +100,7 @@
              }];
 }
 
+//开始初始化相机进行录制
 - (void)startDetect{
     @weakify(self)
     dispatch_async(dispatch_get_main_queue(), ^{
@@ -146,6 +150,7 @@
     [self.renderer updateFilter:sourcePath];
 }
 
+//获取点击后 动态 贴纸 ZIP 包
 - (NSString *)downModelZip:(MGItemModel *)model{
     if (model.status == DownSuccess) {
         NSString *returnString = [FileCacheManager checkZIP:model.zipName];
@@ -162,8 +167,10 @@
                                   if (!error) {
                                       dispatch_group_t group =  dispatch_group_create();
                                       dispatch_group_async(group, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+                                          //准备贴图的具体位置
                                           [self.renderer prepareStickerZip:dstPath];
                                       });
+                                      //创建好贴图位置后实现 选着按钮框的移动
                                       dispatch_group_notify(group, dispatch_get_main_queue(), ^{
                                           if (self.showView && [self.showView.weightView isKindOfClass:[MGBottomItemView class]]) {
                                               MGBottomItemView *tempView = (MGBottomItemView *)self.showView.weightView;
@@ -189,6 +196,7 @@
 /**
  切换分辨率
  @param sender
+ 切换当前显示的分辨率
  */
 - (void)resolutionBtnAction:(UIButton *)sender{
     UIAlertAction *i1280x720 = [UIAlertAction actionWithTitle:@"1280x720" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
@@ -211,6 +219,7 @@
  @param resolution 分辨率
  */
 - (void)resetResolution:(NSString *)resolution{
+    //设置新的分辨率问题
     [self.videoManager stopRunning];
     
     [self.videoManager resetResolution:resolution];
@@ -228,15 +237,19 @@
     sender.userInteractionEnabled = NO;
     [self.videoManager stopRunning];
     
+    //获取 dispatch_group 
     dispatch_group_t group = dispatch_group_create();
     dispatch_group_notify(group, _detectQueue, ^{
         [self.renderer resetDetectFace];
 
         dispatch_sync(dispatch_get_main_queue(), ^{
+            //前后置摄像头切换
             [self.videoManager toggleCamera];
-
+            
+            //重新设置 相机的设置
             [self resetCameraSetting];
             
+            //开始录制
             [self.videoManager startRunning];
             sender.userInteractionEnabled = YES;
         });
@@ -358,6 +371,7 @@
 - (void)autoPreviewOrientation{
     if (self.previewView) {
         AVCaptureVideoOrientation currentOrientation = (AVCaptureVideoOrientation)[UIApplication sharedApplication].statusBarOrientation;
+        //获取 3D 旋转布局情况
         CGAffineTransform transform =  [self.videoManager transformFromBufferOrientation:currentOrientation];
         self.previewView.transform = transform;
         
@@ -399,6 +413,7 @@
 }
 
 #pragma mark - video delegate
+
 -(void)MGCaptureOutput:(AVCaptureOutput *)captureOutput didOutputSampleBuffer:(CMSampleBufferRef)sampleBuffer fromConnection:(AVCaptureConnection *)connection{
     @synchronized(self) {
         if (![self setInputBuffer:sampleBuffer connection:connection]) {
@@ -414,6 +429,7 @@
 }
 
 #pragma mark-
+
 - (BOOL)setInputBuffer:(CMSampleBufferRef)sampleBuffer connection:(AVCaptureConnection *)connection{
     if (self.hasVideoFormatDescription == NO) {
         self.hasVideoFormatDescription = YES;

@@ -45,6 +45,7 @@
     return savePath;
 }
 
+//获取 ZIP 压缩包下载地址
 + (NSString *)checkZIP:(NSString *)name{
     if (!name) {
         return nil;

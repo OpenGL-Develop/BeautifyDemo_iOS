@@ -185,6 +185,7 @@
         }
         
         /* sessionPreset */
+        //设置 录制的 分辨率
         if ([self.videoSession canSetSessionPreset:self.sessionPreset]) {
             [self.videoSession setSessionPreset: self.sessionPreset];
         }else{
@@ -193,6 +194,7 @@
             return;
         }
         
+        //设置录制屏幕 横向 & 纵向 方式
         _videoConnection = [_output connectionWithMediaType:AVMediaTypeVideo];
         [_videoConnection setVideoOrientation:AVCaptureVideoOrientationPortrait];
 //        [_videoConnection setVideoOrientation:AVCaptureVideoOrientationPortraitUpsideDown];
@@ -224,6 +226,7 @@
     }
 }
 
+//初始化录制记录
 - (void)initVideoRecord:(CMFormatDescriptionRef)formatDescription{
     if (self.movieRecorder == nil) {
         
@@ -249,6 +252,7 @@
 }
 
 //前后摄像头
+//通过 AVCaptureDevice 的 AVMediaTypeVideo 来获取摄像头硬件相关参数
 - (AVCaptureDevice *)cameraWithPosition:(AVCaptureDevicePosition) position {
     NSArray *devices = [AVCaptureDevice devicesWithMediaType:AVMediaTypeVideo];
     for (AVCaptureDevice *device in devices) {
@@ -258,6 +262,7 @@
     }
     return nil;
 }
+
 //前后摄像头的切换
 - (void)toggleCamera{
     NSUInteger cameraCount = [[AVCaptureDevice devicesWithMediaType:AVMediaTypeVideo] count];
@@ -349,6 +354,7 @@
         {
             if (YES == [videoDevice lockForConfiguration:NULL])
             {
+                //设置在录像时的帧率 20-60 帧/s
                 videoDevice.activeFormat = vFormat;
                 [videoDevice setActiveVideoMinFrameDuration:CMTimeMake(1,frame/3)];
                 [videoDevice setActiveVideoMaxFrameDuration:CMTimeMake(1,frame)];
@@ -364,13 +370,14 @@
     @synchronized(self){
         CMFormatDescriptionRef formatDescription = CMSampleBufferGetFormatDescription(pixelBuffer);
         
-        
         if (_startRecord == YES) {
             if (self.movieRecorder == nil) {
                 
+                //初始话 record 记录
                 [self initVideoRecord:formatDescription];
                 [self.movieRecorder prepareToRecord];
             }
+            //对当前帧进行 赋值
             [self.movieRecorder appendVideoSampleBuffer:pixelBuffer];
         }
     }
@@ -412,10 +419,12 @@
 }
 
 #pragma mark - delegate
+
 - (void)captureOutput:(AVCaptureOutput *)captureOutput
 didOutputSampleBuffer:(CMSampleBufferRef)sampleBuffer
        fromConnection:(AVCaptureConnection *)connection
 {
+    //创建内存释放池 防止在录制过程中内存过大
     @autoreleasepool {
         if (connection == _videoConnection)
         {
@@ -423,14 +432,17 @@ didOutputSampleBuffer:(CMSampleBufferRef)sampleBuffer
 //            if (self.outputVideoFormatDescription == nil) {
 //                self.outputVideoFormatDescription = formatDescription;
 //            }
+            //传递采集到的数据传递给 BeautityVC 进行 视频每一帧的操作
             if (self.videoDelegate) {
                 [self.videoDelegate MGCaptureOutput:captureOutput didOutputSampleBuffer:sampleBuffer fromConnection:connection];
             }
             
             if (self.videoRecord && _startRecord) {
+                //实现视频输出
                 [self appendVideoBuffer:sampleBuffer];
             }
         }else if (connection == _audioConnection){
+            //实现音频文件输出
             [self appendAudioBuffer:sampleBuffer];
         }
     }

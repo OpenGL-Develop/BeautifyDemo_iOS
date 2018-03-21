@@ -18,6 +18,6 @@
  */
 @interface BeautifyViewController : BaseViewController
 
-
+//UIBlurEffect
 
 @end

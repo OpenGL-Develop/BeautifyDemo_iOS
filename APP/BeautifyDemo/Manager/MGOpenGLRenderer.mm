@@ -12,7 +12,7 @@
 @interface MGOpenGLRenderer ()
 {
     EAGLContext *_oglContext;
-    CVOpenGLESTextureCacheRef _textureCache;
+    CVOpenGLESTextureCacheRef _textureCache;//
     CVOpenGLESTextureCacheRef _renderTextureCache;
     CVPixelBufferPoolRef _bufferPool;
     CFDictionaryRef _bufferPoolAuxAttributes;
@@ -46,6 +46,7 @@
     self = [super init];
     if ( self )
     {
+        //使用 OpenGL 绘制图像时调用 EAGLContext
         _oglContext = [[EAGLContext alloc] initWithAPI:kEAGLRenderingAPIOpenGLES2];
         if ( ! _oglContext ) {
             NSLog( @"[MGOpenGLRenderer init] Problem with OpenGL context." );
@@ -194,6 +195,7 @@
 }
 
 #pragma mark - 添加 Renderer 特效
+
 - (CVPixelBufferRef)rendered:(CVPixelBufferRef)pixelBuffer
                       config:(MGBeautifulConfig*)config{
     
@@ -369,6 +371,7 @@
     });
 }
 
+//更新动态贴纸
 - (void)updateSticke:(NSString *)stickePath{
     dispatch_async(_detectQueue, ^{
         
@@ -378,8 +381,10 @@
         if (YES == hasStick) {
             if (NO == [self.stickPath isEqualToString:stickePath]) {
                 self.stickPath = stickePath;
+                //把位置转化为 UTF-8 编码格式
                 const char *cPath = [self.stickPath cStringUsingEncoding:NSUTF8StringEncoding];
 
+                //改变输出的动态数据包
                 mg_sticker.ChangePackage(self.stickerHandle, cPath, &outpackage);
                 
                 NSLog(@"zip savepath: %s", outpackage);
